@@ -1,20 +1,30 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="toolbar">
     <ion-title>
-      Páginas
+      FORMS
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
-<ion-item routerLink="/login">
-  <ion-button fill="outline">login</ion-button>
-</ion-item>
+<body>
 
-<ion-item routerLink="/registro">
-  <ion-button fill="outline">registro</ion-button>
-</ion-item>
+  <div id="container">
+    <ion-card>
+      <ion-card-content>
+        <ion-item routerLink="/login">
+          <ion-button color="botao" fill="outline">login</ion-button>
+        </ion-item>
+
+        <ion-item routerLink="/registro">
+          <ion-button color="botao" fill="outline">registro</ion-button>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</body>
 
 </ion-content>
 

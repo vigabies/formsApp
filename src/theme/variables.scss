@@ -75,7 +75,36 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 
+  --ion-color-botao: #8eb4d7;
+	--ion-color-botao-rgb: 142,180,215;
+	--ion-color-botao-contrast: #ffffff;
+	--ion-color-botao-contrast-rgb: 0,0,0;
+	--ion-color-botao-shade: #668db1;
+	--ion-color-botao-tint: #547088;
+
+  --ion-color-toolbar: #b4d6d6;
+	--ion-color-toolbar-rgb: 180,214,214;
+	--ion-color-toolbar-contrast: #ffffff;
+	--ion-color-toolbar-contrast-rgb: 0,0,0;
+	--ion-color-toolbar-shade: #9ebcbc;
+	--ion-color-toolbar-tint: #bcdada;
+
+  --ion-color-login: #72d8df;
+	--ion-color-login-rgb: 114,216,223;
+	--ion-color-login-contrast: #ffffff;
+	--ion-color-login-contrast-rgb: 0,0,0;
+	--ion-color-login-shade: #64bec4;
+	--ion-color-login-tint: #80dce2;
+
+  --ion-color-logbot: #7dc3c5;
+	--ion-color-logbot-rgb: 125,195,197;
+	--ion-color-logbot-contrast: #ffffff;
+	--ion-color-logbot-contrast-rgb: 0,0,0;
+	--ion-color-logbot-shade: #6eacad;
+	--ion-color-logbot-tint: #8ac9cb;
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   /*
@@ -237,3 +266,38 @@
 
 }
 
+.ion-color-botao {
+	--ion-color-base: var(--ion-color-botao);
+	--ion-color-base-rgb: var(--ion-color-botao-rgb);
+	--ion-color-contrast: var(--ion-color-botao-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-botao-contrast-rgb);
+	--ion-color-shade: var(--ion-color-botao-shade);
+	--ion-color-tint: var(--ion-color-botao-tint);
+}
+
+.ion-color-toolbar {
+	--ion-color-base: var(--ion-color-toolbar);
+	--ion-color-base-rgb: var(--ion-color-toolbar-rgb);
+	--ion-color-contrast: var(--ion-color-toolbar-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-toolbar-contrast-rgb);
+	--ion-color-shade: var(--ion-color-toolbar-shade);
+	--ion-color-tint: var(--ion-color-toolbar-tint);
+}
+
+.ion-color-login {
+	--ion-color-base: var(--ion-color-login);
+	--ion-color-base-rgb: var(--ion-color-login-rgb);
+	--ion-color-contrast: var(--ion-color-login-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-login-contrast-rgb);
+	--ion-color-shade: var(--ion-color-login-shade);
+	--ion-color-tint: var(--ion-color-login-tint);
+}
+
+.ion-color-logbot {
+	--ion-color-base: var(--ion-color-logbot);
+	--ion-color-base-rgb: var(--ion-color-logbot-rgb);
+	--ion-color-contrast: var(--ion-color-logbot-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-logbot-contrast-rgb);
+	--ion-color-shade: var(--ion-color-logbot-shade);
+	--ion-color-tint: var(--ion-color-logbot-tint);
+}
