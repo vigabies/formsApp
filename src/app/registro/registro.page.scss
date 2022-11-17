@@ -1,3 +1,42 @@
+* {
+  font-family: Georgia;
+}
+
+body{
+  background-color: rgba(217, 247, 250, 0.692);
+}
+
 ion-title{
   text-align: center;
+}
+
+ion-card{
+  background-color: rgb(218, 245, 245);
+  border-radius: 8px;
+}
+
+ion-content {
+  height: 200px;
+  position: relative;
+  display: flex;
+}
+
+#infodois{
+  width: 80%;
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#infodois {
+  ion-button {
+    height: 25px;
+    text-align: center;
+    display: flex;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+  }
 }

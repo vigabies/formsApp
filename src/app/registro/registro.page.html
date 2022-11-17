@@ -1,36 +1,49 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="toolbar">
     <ion-title>registro</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-item>
-    <ion-label position="floating">Nome</ion-label>
-    <ion-input placeholder="Insira seu nome"></ion-input>
-  </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">CPF</ion-label>
-    <ion-input placeholder="000.000.000-00"></ion-input>
-  </ion-item>
+  <body>
+    <div id="info">
+      <ion-card>
+        <ion-card-content>
+              <ion-item>
+                <ion-label position="floating">Nome</ion-label>
+                <ion-input placeholder="Insira seu nome"></ion-input>
+              </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">Email</ion-label>
-    <ion-input placeholder="Insira seu email"></ion-input>
-  </ion-item>
+              <ion-item>
+                <ion-label position="floating">CPF</ion-label>
+                <ion-input placeholder="000.000.000-00"></ion-input>
+              </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">Senha</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
+              <ion-item>
+                <ion-label position="floating">Email</ion-label>
+                <ion-input placeholder="Insira seu email"></ion-input>
+              </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">Confirmar senha</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
+              <ion-item>
+                <ion-label position="floating">Senha</ion-label>
+                <ion-input type="password"></ion-input>
+              </ion-item>
 
-  <ion-button routerLink="/tabs" fill="outline">Salvar</ion-button>
-  <ion-button routerLink="/login" fill="outline">Voltar</ion-button>
+              <ion-item>
+                <ion-label position="floating">Confirmar senha</ion-label>
+                <ion-input type="password"></ion-input>
+              </ion-item>
+    </ion-card-content>
+    </ion-card>
+    </div>
+
+    <div id="info2">
+      <ion-button color="logbot" routerLink="/tabs" shape="round">Salvar</ion-button>
+      <br>
+      <ion-button color="logbot" routerLink="/login" shape="round">Voltar</ion-button>
+    </div>
+
+  </body>
 
 </ion-content>
