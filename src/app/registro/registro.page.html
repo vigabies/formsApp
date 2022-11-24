@@ -1,6 +1,12 @@
 <ion-header>
   <ion-toolbar color="toolbar">
-    <ion-title>registro</ion-title>
+    <ion-title>Registro</ion-title>
+
+    <ion-buttons slot="end">
+    <ion-button routerLink="/produto">
+        <ion-icon slot="icon-only" name="person-add-outline"></ion-icon>
+    </ion-button>
+
   </ion-toolbar>
 </ion-header>
 
@@ -38,12 +44,10 @@
     </ion-card>
     </div>
 
-    <div id="info2">
+    <div id="infodois">
       <ion-button color="logbot" routerLink="/tabs" shape="round">Salvar</ion-button>
-      <br>
-      <ion-button color="logbot" routerLink="/login" shape="round">Voltar</ion-button>
+      <ion-button color="logbot" routerLink="/tabs" shape="round"></ion-button>
     </div>
-
   </body>
 
 </ion-content>
