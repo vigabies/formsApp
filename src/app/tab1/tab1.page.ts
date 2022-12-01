@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Usuario } from '../models/usuario';
+import { StorageService } from '../services/storage.service';
 
 @Component({
   selector: 'app-tab1',
