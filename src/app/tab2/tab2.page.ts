@@ -22,4 +22,9 @@ export class Tab2Page {
 
 }
 
+  async excluirCadastro(email: string){
+    await this.storageService.remove(email);
+    this.buscarUsuarios();
+  }
+
 }
