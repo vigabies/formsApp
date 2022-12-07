@@ -10,25 +10,36 @@
 </ion-header>
 
 <ion-content>
-<body>
-  <form>
-    <ion-card>
-      <ion-item>
-        <ion-input>Nome:</ion-input>
-      </ion-item>
 
-      <ion-item>
-        <ion-input>Descrição:</ion-input>
-      </ion-item>
+  <body>
+    <form>
 
-      <ion-item>
-        <ion-input>Validade:</ion-input>
-      </ion-item>
+      <ion-card>
+        <ion-card-content>
+          <ion-item>
+            <ion-label position="floating">Nome</ion-label>
+            <ion-input placeholder="Insira o nome do produto"></ion-input>
+          </ion-item>
 
-      <ion-item>
-        <ion-input>Preço:</ion-input>
-      </ion-item>
-    </ion-card>
-  </form>
-</body>
+          <ion-item>
+            <ion-label position="floating">Descrição</ion-label>
+            <ion-input placeholder="Insira a descrição do produto"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Validade</ion-label>
+            <ion-input placeholder="28/09/2022"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Preço</ion-label>
+            <ion-input placeholder="Insira o preço do produto">R$: </ion-input>
+          </ion-item>
+
+        </ion-card-content>
+      </ion-card>
+
+
+    </form>
+  </body>
 </ion-content>

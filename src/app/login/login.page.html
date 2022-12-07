@@ -11,35 +11,47 @@
 <ion-content>
 
   <body>
+    <form [formGroup]="formLogin">
 
-    <div id="container">
       <ion-card>
         <ion-card-content>
           <ion-item>
-            <ion-label position="floating">E-mail</ion-label>
-            <ion-input placeholder="Insira seu email"></ion-input>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input placeholder="Insira seu email" formControlName="email"></ion-input>
+            <ng-container *ngFor="let erro of mensagens.email">
+              <span class="msg-erro"
+                *ngIf="formLogin.get('email').hasError(erro.tipo) && (formLogin.get('email').dirty || formLogin.get('email').touched)">
+                {{erro.mensagem}}
+              </span>
+            </ng-container>
           </ion-item>
 
           <ion-item>
             <ion-label position="floating">Senha</ion-label>
-            <ion-input type="password"></ion-input>
+            <ion-input placeholder="Insira sua senha" type="password" formControlName="senha"></ion-input>
+            <ng-container *ngFor="let erro of mensagens.senha">
+              <span class="msg-erro"
+                *ngIf="formLogin.get('senha').hasError(erro.tipo) && (formLogin.get('senha').dirty || formLogin.get('senha').touched)">
+                {{erro.mensagem}}
+              </span>
+            </ng-container>
           </ion-item>
+
+          <div id="letra">
+            <h6 routerLink="/esqueceusenha"><i><u>Esqueceu a senha</u></i></h6>
+          </div>
+
         </ion-card-content>
       </ion-card>
-    </div>
 
-    <div id="containerdois">
-      <ion-button color="logbot" shape="round">Entrar</ion-button>
-      <br>
-      <ion-button routerLink="/registro" color="logbot" shape="round">Registrar-se</ion-button>
-      <br>
-  </div>
+      <div id="containerdois">
+        <ion-button color="logbot" shape="round">Entrar</ion-button>
+        <br>
+        <ion-button routerLink="/registro" color="logbot" shape="round">Registrar-se</ion-button>
+        <br>
+      </div>
+    </form>
 
-<div id="letra">
-  <h6 routerLink="/esqueceusenha"><i><u>Esqueceu a senha</u></i></h6>
-</div>
-
-
-</body>
+  </body>
 
 </ion-content>

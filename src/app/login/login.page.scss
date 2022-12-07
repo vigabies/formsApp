@@ -42,3 +42,21 @@ ion-content {
     left: 50%;
   }
 }
+
+.msg-erro{
+  color:rgb(187, 103, 92);
+  font-size: 13px;
+  clear: both;
+  position: relative;
+}
+
+ion-card{
+  ion-card-content{
+    ion-item{
+      ion-label{
+        font-family: Georgia;
+      }
+    }
+  }
+}
+      

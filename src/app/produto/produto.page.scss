@@ -10,3 +10,13 @@ ion-card{
   background-color: rgb(218, 245, 245);
   border-radius: 8px;
 }
+
+ion-card{
+  ion-card-content{
+    ion-item{
+      ion-label{
+        font-family: Georgia;
+      }
+    }
+  }
+}
